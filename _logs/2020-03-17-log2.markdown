@@ -1,0 +1,10 @@
+---
+collection: logs
+title: "Log3"
+date: 2020-03-19 11:10:00 +0800
+published: false
+---
+
+最近发现了好多豆瓣的迷惑敏感词，过几天整理一下让大家一起笑一笑（or哭一哭）。
+
+Peace！

@@ -1,0 +1,9 @@
+_site
+node_modules
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*.sh
+.jekyll-cache
+.vs
+README_private.md

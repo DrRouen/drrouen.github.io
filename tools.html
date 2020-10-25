@@ -1,0 +1,43 @@
+---
+layout: default
+title: 'Tools'
+description: '一些工具'
+---
+
+<header class="intro-header" style="background-color:#5f1c13">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% for tool in site.tools %}
+                <div class="post-preview">
+                    <a href="{{ tool.url | prepend: site.baseurl }}">
+                        <h2 class="post-title">
+                            {{ tool.title }}
+                        </h2>
+                        {% if tool.subtitle %}
+                            <h3 class="post-subtitle">
+                                {{ tool.subtitle }}
+                            </h3>
+                        {% endif %}
+                    </a>
+                    <p class="post-meta">
+                        Updated on {{ tool.date | date: "%b %-d, %Y" }}
+                    </p>
+                </div>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+---
+layout: page
+title: "About"
+description: "Hey, thanks for visiting."
+color: darkslategray
+disqus: true
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+        在遮荫的栗树下，我出卖你，你出卖我；他们躺在那里，我们躺在这里，在遮荫的栗树下。
+    </blockquote>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;知识分子与群众的不同之处在于他们更倾向于理性，更关注事实。他们的批判性的思维习惯使得他们抗拒对群众很有效果的宣传内容。
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;知识分子讲求实证，会惊讶于逻辑的矛盾和谬误。他们认为过度简化是思想的原罪，不受宣传人员惯用的口号、没有根据的断言和空泛的大而化之等手段影响。
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“一切有效的宣传，”希特勒写道，“必须限制在几则干巴巴的必要的内容，然后再以几道一成不变的公式进行表述。”这些一成不变的公式必须一直重复，因为“只有不断地重复才能最终成功地将一个理念移植到群众的记忆中”。
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哲学教导我们要去怀疑似乎不言自明的事物。而政治宣传则教导我们要接受不言自明的事物，不去进行判断或怀疑。煽动家的目的是让整个社会都奉他为领袖。但是，正如伯特兰·罗素所指出的：“没有实证基础的教条体系如经院哲学、马克思主义和法西斯主义的优势在于能在信徒的群体内产生极强的凝聚力。”
+    因此，所有蛊惑人心的宣传人员必须坚持教条主义。所有他的言论都是没有根据的。他所描绘的世界图景里没有灰色。一切要么是邪恶狰狞的黑色，要么是圣洁美好的白色。用希特勒的话说，宣传工作者应该“对每一个必须解决的问题采取一以贯之的一面倒的态度。”
+    他绝不能承认自己或许是错的，或观点不同的人有可能在部分程度上是正确的。他们不应该与对手进行辩论，而是应该对其进行抨击，用音量压倒他们，如果他们实在是太讨厌，就把他们消灭。
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;道德上有洁癖的知识分子或许会对这种事情感到震惊。但群众总是相信“先声夺人者是正确的”。
+
+    <p style="text-align:right;">
+        ——  奥尔德斯·赫胥黎《重返美丽新世界》
+    </p>
+    <br><br><br>
+    <span id="busuanzi_container_site_uv" style='color:gainsboro'>
+        本站访问数总计<span id="busuanzi_value_site_uv"></span>人次
+    </span>
+    <br>
+    <p style='color:gainsboro'>版权信息：本站仅对原创文章声明版权。任何形式的转载请联系<a href="mailto:zyfws5ydc@relay.firefox.com" style="color:gainsboro">zyfws5ydc@relay.firefox.com</a></p>
+    <p style='color:gainsboro'>主页封面来自攝影師：Download a pic Donate a buck! ，連結：<a href="https://www.pexels.com/zh-tw/photo/48566/" style="color:gainsboro">Pexels</a></p>
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote>
+        Doctor or Engineer, things in between.
+    </blockquote>
+    <p style="font-weight:700;font-size:larger">
+        1. What is Hippocampus Project?
+    </p>
+    <p>
+        The hippocampus is part of the mammalian brain and belongs to the limbic system, which is important in spatial memory and navigation and helps turn short-term memory into long-term memory.
+        <br>Therefore, this project aims to archive some censored information and articles in the Chinese Innernet, especially those that vanished during COVID-19. We are here because we don't want the truth to be forgotten, and to enlighten future generations.
+    </p>
+    <p style="font-weight:700;font-size:larger">
+        2. I want to submit censored articles.
+    </p>
+    <p>
+        Please contact <a href="mailto:zyfws5ydc@relay.firefox.com">zyfws5ydc@relay.firefox.com</a>
+    </p>
+    <p style="font-weight:700;font-size:larger">
+        3. Copyright
+    </p>
+    <p>
+        This site does not claim the copyright of censored articles, but reserves the copyright of all original articles.
+    </p>
+    <p style="font-weight:700;font-size:larger">
+        4. Innernet Guide
+    </p>
+    <p>
+        It's still under construction. Stay tuned!
+    </p>
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+
+<div>
+    {% include disqus.html %}
+</div>
